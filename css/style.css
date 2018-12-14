@@ -1,0 +1,351 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border color to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ------------------------------------------
+--------------- MY CODE ---------------------
+-------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:#fff;
+}
+
+header {
+    background-color:#f3f3f3;
+    width:100%;
+    height:100%;
+}
+
+header #headerLogo {
+    font-size:1.5rem;
+    font-weight:800;
+    color:#111;
+    text-transform: uppercase;
+    display:block; /* Make links block elements because its easier to style afterwards */
+    margin:0 auto;
+    text-align:center;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    margin:0 auto;
+    display:block;
+    width:fit-content; /* Centers elements around content */
+}
+
+header nav ul li {
+    display:inline-block;
+    /*float:left; I don't think I need this?*/ /* If you don't use float there will be a slight gap between links */
+    list-style:none;
+    padding:0 1rem 1rem 1rem;; 
+}
+
+header nav ul li a {
+    font-family: 'Playfair Display', serif;
+    font-size:1rem;
+    color:#111;
+    text-transform: uppercase;
+}
+
+header #headerCases {
+    display:none;
+}
+
+/* INDEX */
+
+#indexBanner {
+    width:100%;  
+    height: calc(100vh - 72px);
+    background-image: url('../images/banner.jpeg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+    display:table;
+}
+
+.container {
+    display:table-cell;
+    vertical-align:middle;
+
+}
+
+#indexBanner h2 {
+    font-family: 'Playfair Display', serif;
+    font-size:3.2rem;
+    color:#fff;
+    text-align:center;
+    font-weight:900;
+    line-height:4rem;
+    text-shadow:2px 2px 1px #111; /* The 1 px is for blur */
+}
+
+#indexBanner h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size:1.4rem;
+    font-style:italic;
+    color:#fff;
+    text-align:center;
+    font-weight:100;
+    text-shadow:2px 2px 8px #111; /* The 1 px is for blur */
+    line-height:2.2rem;
+}
+
+#indexLinks div {
+    margin:1rem 1rem 0;
+    width:calc(100% - 2rem);
+    height: 15vh;
+    background-color:#f2f2f2;
+}
+
+#indexLinks div h3 {
+    font-family: 'Playfair Display', serif;
+    font-size:1.8rem;
+    color:#111;
+    text-align:center;
+    font-weight:650;
+    line-height:2.5rem;
+    text-transform:uppercase;
+    line-height: 15vh;
+}
+
+footer {
+    width:calc(100%-6rem);
+    padding:3rem 3rem;
+    margin-top:1.2rem;
+    background-color:#111;
+    overflow:hidden;
+}
+
+footer ul {
+    width:fit-content;
+    float:left;
+    padding-left:1.2rem;
+}
+
+footer ul li {
+    display:block;
+    list-style:none;
+}
+
+footer ul li a{
+    font-family: 'Playfair Display', serif;
+    font-size:1.5rem;
+    color:#fff;
+    line-height:2.2rem;
+}
+
+#footerCases {
+    display:none;
+}
+
+#footerSM {
+    width:5rem;
+    float:right;
+}
+
+#footerSM i {
+    width:100%;
+    margin-bottom:.5rem;
+    font-size:3.3rem;
+    color: #f2f2f2;
+}
+
+/* For desktops */
+@media only screen and (min-width:820px) {
+    header #headerLogo {
+        margin:1.5rem 0 0 0;
+        text-align:left;
+        padding: 0 1rem 0 2rem;
+        border-right:3px solid #111;
+        float:left;
+        line-height:2.5rem;
+    }
+
+    header nav ul {
+        margin: 1rem 0px 0px 2rem;
+        float:left;
+    }
+
+    header nav ul li a {
+        line-height:3.5rem;
+    }
+
+    header #headerCases {
+        display:block;
+        font-family: 'Playfair Display', serif;
+        font-size:1rem;
+        color:#111;
+        text-transform: uppercase;
+        border: 1px solid #111;
+        line-height:2.5rem;
+        float:right;
+        margin-right:2.5rem;
+        margin-top:1.4rem;
+        padding:0 1.2rem;
+    }
+
+    /* Index part of media query */
+    #indexBanner {
+        width:100%;  
+        height:68vh;
+    }
+
+    #indexBanner h1 {
+        display:block;
+        width:40vw;
+        margin:2rem auto;
+    }
+
+    #indexLinks {
+        overflow:hidden;
+    }
+
+    #indexLinks div {
+        margin:.8rem .4rem 0;
+        height: 25vh;
+        background-color:#f2f2f2;
+        float:left;
+    }
+
+    .wrapperDesktop {
+        width:75vw;
+        margin:0 auto;
+    }
+
+    .indexLinkSquare {
+        width:25% !important; /* Overrides other styling for this element */
+    }
+
+    .indexLinkRect {
+        width:46% !important;
+    }
+
+    #indexLinks div h3 {
+        line-height:25vh;
+    }
+
+    /* Media query for footer */ 
+    footer {
+        clear: both;
+    }
+
+    #footerCases {
+        display:block;
+    }
+
+    footer ul {
+        padding-right:1.2rem;
+    }
+
+    footer ul li p {
+        font-family: 'Playfair Display', serif;
+        font-size:1.5rem;
+        color:#fff;
+        line-height:2.2rem;
+        text-transform:uppercase;
+    }
+}
